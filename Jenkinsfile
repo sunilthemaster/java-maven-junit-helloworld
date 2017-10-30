@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Pulls') {
       steps {
-        git(url: 'https://github.com/sunilthemaster/dataplatform.git', branch: 'master')
+        git(url: 'https://github.com/sunilthemaster/dataplatform.git', branch: 'master', credentialsId: 'sunilthemaster')
       }
     }
   }
