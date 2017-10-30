@@ -6,9 +6,9 @@ pipeline {
         echo 'hello'
       }
     }
-    stage('compile') {
+    stage('Pulls') {
       steps {
-        sh 'mvn compile'
+        git(url: 'https://github.com/sunilthemaster/dataplatform.git', branch: 'master')
       }
     }
   }
